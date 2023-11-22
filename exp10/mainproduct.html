@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--link for bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    
+    <!--Link Style CSS-->
+    <link rel="stylesheet" href="style.css">
+    <title>coffee</title>
+</head>
+<body>
+    <!-- Navbar Start-->
+    <nav class="navbar navbar-expand dark-bg fixed-top">
+        <a href="index.html" class="navbar-brand">Coffee<span>.</span></a>
+        <div>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="index.html"
+                class="nav-link ">Home</a></li>
+                <li class="nav-item"><a href="about.html"
+                class="nav-link">About</a></li>
+                <li class="nav-item"><a href="product.html"
+                class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="contact.html"
+                class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar end-->
+    <!--Buy section start-->
+    <section>
+        <div class="mainBuyProducts container">
+            <div class="row justify-content -center">
+                <div class="col-sm-5">
+                    <img src="assets/secondHeader.jpg"
+                    class="img-fluid" alt="">
+                </div>
+                <div class="col-sm-5">
+                    <div class="boxContent">
+                        <h5>#1 on Trending</h5>
+                        <h6>Coffee Brand</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores perferendis culpa, cupiditate nam, consequatur quidem odit eveniet officia vel a
+                            <br>lias est deleniti aut maxime tempore. Nam quos asperiores est pariatur inventore, quibusdam explicabo quaerat qui culpa voluptates voluptate error voluptatum. Deleniti quidem nulla ullam aut a, voluptate similique earum illo!</p>
+                        <button class="btn" data-toggle="modal"
+                        data-target="#LoginPopup">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Buy section end-->
+   <!--Footer section start-->
+   <footer>
+    <a href="#">spsahoo2003@gmail.com</a>
+</footer>
+<!--Footer section end-->
+<!--Popup for login start-->
+<div class="modal fade" id="LoginPopup">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class ="modal-content">
+            <div class="modayBody">
+              <h6>Login Now</h6> 
+              <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-11">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="">email
+                                </label>
+                                <input type="email"
+                                placeholder="enter email"
+                                class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Password</label>
+                                <input type="password"
+                                placeholder="enter password"
+                                class="form-control">
+                            </div>
+                            <button class="btn">Login Now</button>
+                        </form>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--popup for login end-->
+<!--script for bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

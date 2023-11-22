@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--link for bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    
+    <!--Link Style CSS-->
+    <link rel="stylesheet" href="style.css">
+    <title>contact|| coffee</title>
+</head>
+<body class="aboutPage ContactPage">
+    <!-- Navbar Start-->
+    <nav class="navbar navbar-expand fixed-top">
+        <a href="index.html" class="navbar-brand">Coffee<span>.</span></a>
+        <div>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="index.html"
+                class="nav-link ">Home</a></li>
+                <li class="nav-item"><a href="about.html"
+                class="nav-link ">About</a></li>
+                <li class="nav-item"><a href="product.html"
+                class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="#"
+                class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar end-->
+
+    <!--Home section-->
+    <section>
+        <div class="AboutHome">
+            <div class="AboutHomeParent">
+                <div>
+                    <img src="assets/secondHeader.jpg" alt="">
+                </div>
+                <div class="ImgOverlay"></div>
+            </div>
+            <div class="vidContent">
+                <h6>Contact for support</h6>
+            </div>
+        </div>
+    </section>
+    <!--Home section End-->
+    <!--Contact from start-->
+    <section>
+        <div class="contact container">
+            <div class="row justify-content-center">
+                <h6>Fill the form</h6>
+                <div class="col-sm-8">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">Name</label>
+                            <input type="text"
+                            placeholder="Enter your Name"
+                            class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Email</label>
+                            <input type="text"
+                            placeholder="Enter your email"
+                            class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Phone Number</label>
+                            <input type="number"
+                            placeholder="Enter Your Phone Number"
+                            class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="">how can we help you</label>
+                            <textarea name=""
+                            class="form-control"
+                            placeholder="How can we help you" 
+                            required id=""
+                                cols="30" rows="10"></textarea>
+                        </div>
+                        <button class="btn">Submit Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Contact  form end-->
+      <!--Footer section start-->
+      <footer>
+        <a href="#">spsahoo2003@gmail.com</a>
+    </footer>
+    <!--Footer section end-->
+    <!--script for bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Custom Script-->
+    <script>
+        $(document).scroll(function(){
+           $(".navbar").toggleClass("scroll",$(this).scrollTop
+           () > $(".navbar").height()) 
+        })
+    </script>
+</body>
+</html>    

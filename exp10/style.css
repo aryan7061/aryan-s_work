@@ -1,0 +1,317 @@
+ @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Global Variable */
+:root{
+    --main: #ff1000;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main);
+}
+*::selection{
+    background:var(--main);
+    color: #000;
+}
+.btn{
+    width: 300px;
+    border: 1px solid var(--main);
+    color: var(--main) !important;
+    border-radius: 10px;
+    transition:0.2s liner;
+}
+.btn:hover{
+    background: var(--main);
+    color:#fff !important;
+    letter-spacing: 2px;
+}
+body{
+    background: #222;
+    color: #fff
+}
+*{
+    font-family: "Arial",serif;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    transition: 0.5s linear;
+}
+/*Navbar Starts*/
+.navbar{
+    padding:20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+}
+.navbar.scroll{
+    background:#000;
+    padding:5px;
+}
+.navbar-brand{
+    font-weight:600px;
+    font-size: 600;
+    color:#fff;
+}
+.navbar-brand span{
+    color:var(--main)
+}
+.navbar-nav{
+    padding:20px auto;
+    margin-top: 10px;
+}
+.nav-link{
+    color:#fff !important;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.nav-link:hover,
+.nav-link.active{
+    background:var(--main);
+}
+/*Navbar Ends*/
+
+/* Home section */
+.Home video{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+.VidOverlay, .SecondHeaderOverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0.1;
+}
+.vidContent{
+   
+    position: absolute;
+    top: 50%;
+    left: 39%;
+    transform: translation(-50%,-50%);
+    background:none;
+    padding: 10px;
+    text-align: center;
+}
+.vidContent h6{
+    font-size: 60px;
+    font-family:  'poppins',sans-serif;
+    font-family: 'Dancing Script', cursive;
+}
+/* Home sectio End*/
+
+/*Start Cofee Start Fresh */
+.startFresh{
+    margin: 150px auto;
+    position:relative;
+}
+.startFresh .animation{
+    position: absolute;
+    animation: MoveLeftRight 4s infinite;
+}
+.startFresh h6{
+    font-size: 70px;
+    margin-top: 40px;
+    font-family:  'poppins',sans-serif;
+    font-family: 'Dancing Script', cursive;
+
+}
+@keyframes MoveRight{
+    0%{
+        right: 0;
+    }
+    25%{
+        right: 10%;
+    }
+    50%{
+        right: 20%;
+    }
+    100%{
+        right: 0;
+    }
+}
+/* Start Cofee Start fresh*/
+/* Second Header Start*/
+.secondHeader{
+    position: relative;
+    margin-bottom: 150px;
+}
+.secondHeader img{
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+}
+.SecondHeaderOverlay , .AboutHome.Imgoverlay{
+    opacity:0.6;
+}
+.SecondHeaderContent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+.SecondHeaderContent h6{
+    font-size: 60px;
+    font-family:  'poppins',sans-serif;
+    font-family: 'Dancing Script', cursive;
+}
+/*Second Header End */
+/*product section strt*/
+.Products{
+    margin-bottom: 150px
+}
+.products .box{
+    background: #333;
+    box-shadow: 10px 10px 10px -10px rgba(0,0,0,0.7),
+    inset 10px 10px 10px -10px rgba(0,0,0,0.7);
+}
+.products .boxContent h5{
+    color: #00e1ff;
+    font-size: 12px;
+}
+.products.boxContent h6{
+    font-size: 30px;
+}
+.products.boxContent p{
+    font-size: 12px;
+}
+.products .secondRow{
+   margin-top: 50px; 
+}
+/*product section end*/
+/*footer*/
+footer{
+background: #000;
+text-align: center;
+padding:20px;
+}
+footer a{
+    color:#fff!important;
+    text-decoration: none !important;
+}
+/*footer*/
+
+/*===================================================
+ABOUT PAGE START
+===================================================*/
+.aboutPage.AboutHome{
+    position:relative;
+}
+.aboutPage .AboutHome img{
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
+}
+.aboutPage .ImgOverlay{
+    opacity: 0.5;
+}
+/*About Main Section Start*/
+.aboutPage .about{
+    margin:150px auto;
+}
+.aboutPage .about img{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+.aboutPage .about .content{
+    margin-top: 30px;
+}
+.aboutPage .about .content h6{
+    font-size: 40px;
+    font-weight: 600;
+    font-family:  'poppins',sans-serif;
+    font-family: 'Dancing Script', cursive;
+}
+
+/*About Main Section End*/
+/*===================================================
+ABOUT PAGE END
+===================================================*/
+
+/*===================================================
+PRODUCT PAGE START
+===================================================*/
+.productsPagemain{
+    margin: 80px auto;
+}
+/*===================================================
+PRODUCT PAGE END
+===================================================*/
+
+/*===================================================
+CONTACT PAGE START
+===================================================*/
+.ContactPage .contact{
+    margin: 150px auto;
+}
+.ContactPage .contact  h6{
+    text-align: center;
+    font-size: 60px;
+}
+.ContactPage .contact form{
+    box-shadow: 20px 20px 20px -20px rgba(0,0,0,0.7),
+    inset 20px 20px 20px -20px rgba(0,0,0,0.9);
+    padding: 20px;
+}
+.ContactPage .contact textarea {
+    resize: none;
+}
+/*===================================================
+CONTACT PAGE END
+===================================================*/
+
+/*======================= ============================
+MAIN PRODUCT PAGE START
+===================================================*/
+.mainBuyProducts{
+    margin: 180px auto;
+} 
+.mainBuyProducts img{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+.mainBuyProducts .col -sm-5 .boxContent{
+    padding: 20px;
+}
+.mainBuyProducts .boxContent h5{
+    color: #00e1ff;
+    font-size: 12px;
+}
+.mainByProducts .boxContent h6{
+    font-size: 30px;
+}
+.mainBuyProducts .boxContent p{
+    font-size: 15px;
+}
+/* Login popup start*/
+.modayBody{
+    background:#222
+}
+.modayBody h6{
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px auto;
+}
+.modayBody input{
+    background: none !important;
+    border-radius: 10px;
+}
+.modayBody input::placeholder{
+    color:#fff;
+}
+.modayBody .btn{
+    margin-bottom: 1;
+}
+/*login Popup end*/
+/*===================================================
+MAIN PRODUCT PAGE END
+===================================================*/
